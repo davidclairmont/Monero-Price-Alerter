@@ -5,7 +5,7 @@ from bs4 import BeautifulSoup
 
 monero_low_threshold = 80
 monero_high_threshold = 100
-## if a user wanted to make this work with their own IFTTT account, they would have to create 2 events in IFTTT
+## if a user wanted to make this work with their own IFTTT account, they would have to create 2 webhook events in IFTTT
 ## called monero_price_emergency and monero_price_update. both events would take a value called value1
 ## the user would have to replace the key at the end of the ifttt_url with their own account key and download the IFTTT phone app
 ifttt_url = "https://maker.ifttt.com/trigger/{}/with/key/nlzvcL0AYpmG6i8_KIXMUn8PZzXCbMZpqCeaQvghR8_"
