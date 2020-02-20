@@ -24,6 +24,7 @@ def getCurrentPrice():
     price = str(soup.find("span", class_="price").text)
     ## removes the $ sign from the price text
     price = float(price[1:])
+    price = float('{0:.2f}'.format(price))
     return price
 
 ## function to create the HTTP POST request to the IFTTT site
